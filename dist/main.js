@@ -113,9 +113,11 @@
 		if (!address) {
 			return;
 		}
-		var url = 'https://maps.googleapis.com/maps/api/staticmap?center=' +
+		/*var url = 'https://maps.googleapis.com/maps/api/staticmap?center=' +
 			address.split(' ').join('+') + '&size=' + width + 'x' + height + '&zoom=' + zoom +
-			'&markers=' + address.split(' ').join('+') + '&key=' + mapsKey;
+			'&markers=' + address.split(' ').join('+') + '&key=' + mapsKey;*/
+		var url ='https://en.wikipedia.org/wiki/Salesforce_Tower_(Indianapolis)#/map/0'
+
 		sdk.setContent('<a href="' + link + '"><img src="' + url + '" /></a>');
 		sdk.setData({
 			address: address,
