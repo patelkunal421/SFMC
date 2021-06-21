@@ -113,10 +113,10 @@
 		if (!address) {
 			return;
 		}
-		var url = 'https://maps.googleapis.com/maps/api/js?center=' +
+		/*var url = 'https://maps.googleapis.com/maps/api/js?center=' +
 			address.split(' ').join('+') + '&size=' + width + 'x' + height + '&zoom=' + zoom +
-			'&markers=' + address.split(' ').join('+') + '&key=' + mapsKey + '&callback=initMap';
-		//var url ='https://i.stack.imgur.com/xARkk.png';
+			'&markers=' + address.split(' ').join('+') + '&key=' + mapsKey + '&callback=initMap';*/
+		var url ='https://i.stack.imgur.com/xARkk.png';
 
 		sdk.setContent('<a href="' + link + '"><img src="' + url + '" /></a>');
 		sdk.setData({
